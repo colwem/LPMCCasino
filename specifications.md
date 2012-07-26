@@ -127,91 +127,98 @@ Looks like she'll be back to this page relatively shortly!
 
 
 ####TODO
-- A text box that allows the user to input their email
+- A text box that allows the user to input their email labelled "Please Enter your Email"
 - A verification output to let the user know they have successfully or unsuccessfully sent themselves their
 username and new password.
 - A back button to return you to the main login page
 - Add the same background used for the login page to this page.
 
 ####DONE
--Nothing
-
-###Main Page
-
-####Usage Case
-
-####TODO
-Add specs
-
-####DONE
--Nothing
+- Nothing
 
 ###Settings Page
+The settings page is used for the player to change their individual settings for their account. These include
+their email, their password, and their currency. As more complicated features are added, this page will need
+to be updated to contain configuration options for the additional fields.
+
+####Usage Case
+
+
+####TODO
+- Add specs
+
+####DONE
+- Nothing
+
+###Main Page
+This is the main splash page for the Casino. It displays your current amount of money, your available games, 
+and gives you the option to access your settings page. This is a centralized hub for what's going on in the Casino,
+but does not have any extensive functionality into and of itself.
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
 
 ###Slots Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
 
 ###Blackjack Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
 
 ###Roulette Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
 
 ###Craps Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
 
 ###Texas Hold 'em Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
 
 ###Gentleman's Poker Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
