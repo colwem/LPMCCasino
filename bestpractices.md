@@ -10,15 +10,10 @@ specific conventions to our project. If you have any recommendations, simply mod
 and submit a pull request.
 
 ##Formatting
-- Java code will be have a single tab per functional block {} 
+- Java code will have a single tab per functional block {} 
 - Java functional blocks including but not limited to ifs, elses, fors, whiles, functions and classes,
 will always start with a curly brace { and end with a curly brace }. The opening brace will go on the same
-line as the boolean statement, while the closing brace occupies its own line.  
-```
-for (int x = 0; x < 100; x++) {  
-    /* Code goes here */
-}
-```
+line as the boolean statement, while the closing brace occupies its own line.
 - As a general rule, subclassing within the same file is frowned upon.
 - Comments should always be in the form /* */, never //.  
 - Excessive whitespace is to be avoided.
