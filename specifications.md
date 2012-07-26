@@ -1,4 +1,4 @@
-#Specifications - Learn Programming Mentoring Community Channel
+#Specifications - LPMC Casino
 
 ##Overview
 This is a functional specification, designed to give direction as to how the user will interact with the applet. 
@@ -52,7 +52,7 @@ is moved around the program are left to the discretion of the programmer.
 This is the primary gateway into the application. It's a simple user\name password input form,
 that is also able to give back basic feedback.
 
-Usage Case:
+####Usage Case
 Felicity wants to play blackjack, because she as a crippling gambling addiction and can never get enough. Unfortunately for her,
 she lives in Georgia where there aren't any casinos. She stumbles upon our website, and immediately goes to start playing. She 
 realizes that first she needs to create an account, so she presses the "Create New Account" button, and gets sent to that page,
@@ -64,7 +64,7 @@ After going and getting some coffee and reloading the page, she notices the "For
 After heading to that page and using her email to recover her password, she returns to the login page and types it in.
 She presses login, and is taken into the land of gambling goodness.
 
-TODO:
+####TODO
 - A text box labelled "Username" used to input your username
 - A text box labelled "Password" used to input your password (Blocked out by *s)
 - A status output that tells the user if they were unsuccessful
@@ -75,32 +75,41 @@ TODO:
 - A button marked "Quit" used to close the applet
 - A fun gambling\casino based graphic to have behind the login interface
 
-DONE:
+####DONE
 - Nothing
 
 ###Create New Account Page
-TODO: Add specs
+####TODO 
+Add specs
 
 ###Main Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Settings Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Slots Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Blackjack Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Roulette Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Craps Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Texas Hold 'em Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Gentleman's Poker Page
-TODO: Add specs
+####TODO
+Add specs
