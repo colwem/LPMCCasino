@@ -10,7 +10,7 @@ specific conventions to our project. If you have any recommendations, simply mod
 and submit a pull request.
 
 ##Formatting
-- Java code will be have a single tab per functional block {} 
+- Java code will have a single tab per functional block {} 
 - Java functional blocks including but not limited to ifs, elses, fors, whiles, functions and classes,
 will always start with a curly brace { and end with a curly brace }. The opening brace will go on the same
 line as the boolean statement, while the closing brace occupies its own line.
@@ -30,3 +30,5 @@ line as the boolean statement, while the closing brace occupies its own line.
 - Any method that does more than one thing should be split into multiple methods that do each of the things.
 - If writing an API for consumption somewhere else in the program, include /** */ Javadoc comments so that documentation can be easily generated.
 - Follow general OOP practices. Inheritance and polymoprhism are going to be especially important when dealing with Swing.
+- Use lazy initialization where prudent
+- Only expose variables via getter and setter methods
