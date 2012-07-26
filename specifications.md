@@ -70,7 +70,7 @@ She presses login, and is taken into the land of gambling goodness.
 - A status output that tells the user if they were unsuccessful
 - A button marked "Login" that allows you to login. This button can be pressed by hitting enter as well.
 - A button marked "Create New Account" that takes you to the create new account screen.
-- A button marked "Forgot your username or password?"
+- A button marked "Forgot Your Username or Password?"
 - A title\header that reads "Learn Programming Casino" in some sans serif font
 - A button marked "Quit" used to close the applet
     - This button need a confirmation dialog to make sure the user wants to leave
@@ -106,38 +106,112 @@ a properly formatted email, she manages to get all the information in. She press
     - This button's location should be consistant with the "Quit" button on the login page
 - Add the same background used for the login page to this page
 
+####DONE
+- Nothing
+
 ###Forgot Username or Password Page
+This page allows the user to request that their password be reset and sent to them via email. 
+Verification is based on them recieving the email, not username or password.
+
+####Usage Case
+So Felicity went out to a bar with her friends, and got hammered, because that's lyke, totally her thing. When she finally comes home
+after an unsuccessful night of trying to dance while having two left feet, she decides to give in to her favorite vice: Our Casino!
+
+Unfortunately for her, she can't remember her password, thanks to Captain Morgan locking it away deep in his treasure trest of lost memories. 
+We're there to the rescue! She clicks on the "Forgot Your Username or Password?" button on the main page, and is taken to the Forgot Username or Password Page.
+Here she enters her email, having written it on a little sticky note next to her monitor, and has a new password sent to her. Typing one character at a time, 
+staring at the keyboard, she enters it in the main login page, and heads into the Casino.
+
+Even more unfortunately, she won't remember any of this tomorrow, and will be very confused as to why her password doesn't work.
+Looks like she'll be back to this page relatively shortly!
+
+
 ####TODO
-Add specs
+- A text box that allows the user to input their email
+- A verification output to let the user know they have successfully or unsuccessfully sent themselves their
+username and new password.
+- A back button to return you to the main login page
+- Add the same background used for the login page to this page.
+
+####DONE
+-Nothing
 
 ###Main Page
+
+####Usage Case
+
 ####TODO
 Add specs
+
+####DONE
+-Nothing
 
 ###Settings Page
+
+####Usage Case
+
 ####TODO
 Add specs
+
+####DONE
+-Nothing
 
 ###Slots Page
+
+####Usage Case
+
 ####TODO
 Add specs
+
+####DONE
+-Nothing
 
 ###Blackjack Page
+
+####Usage Case
+
 ####TODO
 Add specs
+
+####DONE
+-Nothing
 
 ###Roulette Page
+
+####Usage Case
+
 ####TODO
 Add specs
+
+####DONE
+-Nothing
 
 ###Craps Page
+
+####Usage Case
+
 ####TODO
 Add specs
+
+####DONE
+-Nothing
 
 ###Texas Hold 'em Page
+
+####Usage Case
+
 ####TODO
 Add specs
 
+####DONE
+-Nothing
+
 ###Gentleman's Poker Page
+
+####Usage Case
+
 ####TODO
 Add specs
+
+####DONE
+-Nothing
