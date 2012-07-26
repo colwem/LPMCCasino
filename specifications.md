@@ -73,14 +73,38 @@ She presses login, and is taken into the land of gambling goodness.
 - A button marked "Forgot your username or password?"
 - A title\header that reads "Learn Programming Casino" in some sans serif font
 - A button marked "Quit" used to close the applet
+    - This button need a confirmation dialog to make sure the user wants to leave
 - A fun gambling\casino based graphic to have behind the login interface
+
+#####Technical Note
+All user sensetive information moving from the application to the database will need to be encrypted
 
 ####DONE
 - Nothing
 
 ###Create New Account Page
+The create new account page is used to add a new account to the Casino, and is basic user input
+and feedback.
+
+####Usage Case
+So Felicity really wants to play blackjack, because she heard that if you're smart you can totally beat the house and make tons
+of money doing it. Despite the fact that our game uses no real money, she is highly motivated anyway. Because of this, she needs to create a new account
+She goes to enter her username, "xOxHAWTFelicityXoX" and her password, "felicity", as well as her email address. This last one is rather confusing, as 
+Filicity doesn't know the difference between an email and an internet. Nevertheless, after a few failed attempts and the response bar telling her she needs
+a properly formatted email, she manages to get all the information in. She presses the "Create New Account" button, and logs into the main page of the casino.
+
 ####TODO 
-Add specs
+- A text box labelled "Username" used to pick a username
+    - Usernames can be a combination of letters, numbers, underscores, and periods
+- A text box labelled "Password" used to input your password
+    - Passwords can have letters numbers and standard symbols
+- A text box labelled "Email Address" used to input your email address
+- A dropdown of currencies, allowing the user to pick one
+- A feedback output used to indicate problems with the above inputs
+- A "Create Account" button, used to finish the user input
+- A "Back" button used to return you to the login page
+    - This button's location should be consistant with the "Quit" button on the login page
+- Add the same background used for the login page to this page
 
 ###Main Page
 ####TODO
