@@ -3,7 +3,7 @@
 ##Overview
 This is a functional specification, designed to give direction as to how the user will interact with the applet. 
 It is not intended to be a piece of technical documentation, nor is it a complete list of needed features or ideas.
-It is merely a starting point ni order to have a framework with which to work from. 
+It is merely a starting point in order to have a framework with which to work from. 
 
 ##Flow of User Interaction
             Login page
