@@ -48,29 +48,29 @@ is moved around the program are left to the discretion of the programmer.
 ###Login Page
 TODO: Add specs
 
-###Create New Account Page:
+###Create New Account Page
 TODO: Add specs
 
-###Main Page:
+###Main Page
 TODO: Add specs
 
-###Settings Page:
+###Settings Page
 TODO: Add specs
 
-###Slots Page:
+###Slots Page
 TODO: Add specs
 
-###Blackjack Page:
+###Blackjack Page
 TODO: Add specs
 
-###Roulette Page:
+###Roulette Page
 TODO: Add specs
 
-###Craps Page:
+###Craps Page
 TODO: Add specs
 
-###Texas Hold 'em Page:
+###Texas Hold 'em Page
 TODO: Add specs
 
-###Gentleman's Poker Page:
+###Gentleman's Poker Page
 TODO: Add specs
