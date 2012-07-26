@@ -27,19 +27,19 @@ It is merely a starting point ni order to have a framework with which to work fr
                       |- Gentlemans Poker -------- Gentlemans Poker Page ---|
 
 ##General Heirarchy
-    - Login Page: This page will be the splash page of the Casino that will load upon first starting the applet.
-    - Create New Account Page: This page will allow the user to create a new account in the Casino.
-    - Main Page: This will be the main administrative page that allows you to access the other pages.
-    - Settings Page: This page will allow the user to change specific things about their game environment.
-      This includes things like currency, types of game rules, etc. This will be expanded as the games are developed.
-    - Slots Page: This page will allow the user to play a simple slot machine.
-    - Blackjack Page: This page will allow the user to play the game Blackjack, also known as 21, against the dealer.
-    - Roulette Page: This page will allow the player to play a game of Roulette.
-    - Craps Page: This page will allow the user to play a game of craps.
-    - Texas Hold 'em Page: This page will allow the user to play Texas Hold 'em against an AI opponent or set of AI opponents.
-    - Gentlemans Poker Page: This page will allow the user to play Gentleman's Poker, also known as 5 card draw, against an AI opponent or set of AI opponents.
+   - Login Page: This page will be the splash page of the Casino that will load upon first starting the applet.
+   - Create New Account Page: This page will allow the user to create a new account in the Casino.
+   - Main Page: This will be the main administrative page that allows you to access the other pages.
+   - Settings Page: This page will allow the user to change specific things about their game environment.
+     This includes things like currency, types of game rules, etc. This will be expanded as the games are developed.
+   - Slots Page: This page will allow the user to play a simple slot machine.
+   - Blackjack Page: This page will allow the user to play the game Blackjack, also known as 21, against the dealer.
+   - Roulette Page: This page will allow the player to play a game of Roulette.
+   - Craps Page: This page will allow the user to play a game of craps.
+   - Texas Hold 'em Page: This page will allow the user to play Texas Hold 'em against an AI opponent or set of AI opponents.
+   - Gentlemans Poker Page: This page will allow the user to play Gentleman's Poker, also known as 5 card draw, against an AI opponent or set of AI opponents.
     
 ##Specific Specifications
-    This will be where specifications for individual features, pages, or ideas have been described. Any functionality listed here will be marked as either
-    "DONE" or "TODO" as an indicator for whether or not it still needs to be completed. To request a feature\change be added to the Casino, make your edits
-    to the necessary part of the spec, and submit a pull request. All fuctionality will be defined within this spec.
+   This will be where specifications for individual features, pages, or ideas have been described. Any functionality listed here will be marked as either
+   "DONE" or "TODO" as an indicator for whether or not it still needs to be completed. To request a feature\change be added to the Casino, make your edits
+   to the necessary part of the spec, and submit a pull request. All fuctionality will be defined within this spec.
