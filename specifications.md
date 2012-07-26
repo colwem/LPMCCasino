@@ -1,4 +1,4 @@
-#Specifications - Learn Programming Mentoring Community Channel
+#Specifications - LPMC Casino
 
 ##Overview
 This is a functional specification, designed to give direction as to how the user will interact with the applet. 
@@ -30,7 +30,7 @@ is moved around the program are left to the discretion of the programmer.
 ##General Heirarchy
    - Login Page: This page will be the splash page of the Casino that will load upon first starting the applet.
    - Create New Account Page: This page will allow the user to create a new account in the Casino.
-   - Forgot Username Pag: This page allows you to recover your username and password.
+   - Forgot Username Page: This page allows you to recover your username and password.
    - Main Page: This will be the main administrative page that allows you to access the other pages.
    - Settings Page: This page will allow the user to change specific things about their game environment.
      This includes things like currency, types of game rules, etc. This will be expanded as the games are developed.
@@ -52,7 +52,7 @@ is moved around the program are left to the discretion of the programmer.
 This is the primary gateway into the application. It's a simple user\name password input form,
 that is also able to give back basic feedback.
 
-Usage Case:
+####Usage Case
 Felicity wants to play blackjack, because she as a crippling gambling addiction and can never get enough. Unfortunately for her,
 she lives in Georgia where there aren't any casinos. She stumbles upon our website, and immediately goes to start playing. She 
 realizes that first she needs to create an account, so she presses the "Create New Account" button, and gets sent to that page,
@@ -64,7 +64,7 @@ After going and getting some coffee and reloading the page, she notices the "For
 After heading to that page and using her email to recover her password, she returns to the login page and types it in.
 She presses login, and is taken into the land of gambling goodness.
 
-TODO:
+####TODO
 - A text box labelled "Username" used to input your username
 - A text box labelled "Password" used to input your password (Blocked out by *s)
 - A status output that tells the user if they were unsuccessful
@@ -73,34 +73,71 @@ TODO:
 - A button marked "Forgot your username or password?"
 - A title\header that reads "Learn Programming Casino" in some sans serif font
 - A button marked "Quit" used to close the applet
+    - This button need a confirmation dialog to make sure the user wants to leave
 - A fun gambling\casino based graphic to have behind the login interface
 
-DONE:
+#####Technical Note
+All user sensetive information moving from the application to the database will need to be encrypted.
+
+####DONE
 - Nothing
 
 ###Create New Account Page
-TODO: Add specs
+The create new account page is used to add a new account to the Casino, and is basic user input
+and feedback.
+
+####Usage Case
+So Felicity really wants to play blackjack, because she heard that if you're smart you can totally beat the house and make tons
+of money doing it. Despite the fact that our game uses no real money, she is highly motivated anyway. Because of this, she needs to create a new account
+She goes to enter her username, "xOxHAWTFelicityXoX" and her password, "felicity", as well as her email address. This last one is rather confusing, as 
+Filicity doesn't know the difference between an email and an internet. Nevertheless, after a few failed attempts and the response bar telling her she needs
+a properly formatted email, she manages to get all the information in. She presses the "Create New Account" button, and logs into the main page of the casino.
+
+####TODO 
+- A text box labelled "Username" used to pick a username
+    - Usernames can be a combination of letters, numbers, underscores, and periods
+- A text box labelled "Password" used to input your password
+    - Passwords can have letters numbers and standard symbols
+- A text box labelled "Email Address" used to input your email address
+- A dropdown of currencies, allowing the user to pick one
+- A feedback output used to indicate problems with the above inputs
+- A "Create Account" button, used to finish the user input
+- A "Back" button used to return you to the login page
+    - This button's location should be consistant with the "Quit" button on the login page
+- Add the same background used for the login page to this page
+
+###Forgot Username or Password Page
+####TODO
+Add specs
 
 ###Main Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Settings Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Slots Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Blackjack Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Roulette Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Craps Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Texas Hold 'em Page
-TODO: Add specs
+####TODO
+Add specs
 
 ###Gentleman's Poker Page
-TODO: Add specs
+####TODO
+Add specs
