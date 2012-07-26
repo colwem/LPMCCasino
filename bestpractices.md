@@ -1,4 +1,4 @@
-#Best Practices for writing Good Java
+#Best Practices for Writing Good Java
 
 ##Overview
 The purpose of this document is to codify a set of rules and best practices designed to
