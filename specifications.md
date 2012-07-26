@@ -1,4 +1,4 @@
-#Specifications - Learn Programming Mentoring Community Channel
+#Specifications - LPMC Casino
 
 ##Overview
 This is a functional specification, designed to give direction as to how the user will interact with the applet. 
@@ -52,7 +52,7 @@ is moved around the program are left to the discretion of the programmer.
 This is the primary gateway into the application. It's a simple user\name password input form,
 that is also able to give back basic feedback.
 
-Usage Case:
+####Usage Case
 Felicity wants to play blackjack, because she as a crippling gambling addiction and can never get enough. Unfortunately for her,
 she lives in Georgia where there aren't any casinos. She stumbles upon our website, and immediately goes to start playing. She 
 realizes that first she needs to create an account, so she presses the "Create New Account" button, and gets sent to that page,
