@@ -30,3 +30,5 @@ line as the boolean statement, while the closing brace occupies its own line.
 - Any method that does more than one thing should be split into multiple methods that do each of the things.
 - If writing an API for consumption somewhere else in the program, include /** */ Javadoc comments so that documentation can be easily generated.
 - Follow general OOP practices. Inheritance and polymoprhism are going to be especially important when dealing with Swing.
+- Use lazy initialization where prudent
+- Only expose variables via getter and setter methods
