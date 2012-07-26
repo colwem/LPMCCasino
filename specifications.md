@@ -30,7 +30,7 @@ is moved around the program are left to the discretion of the programmer.
 ##General Heirarchy
    - Login Page: This page will be the splash page of the Casino that will load upon first starting the applet.
    - Create New Account Page: This page will allow the user to create a new account in the Casino.
-   - Forgot Username Pag: This page allows you to recover your username and password.
+   - Forgot Username Page: This page allows you to recover your username and password.
    - Main Page: This will be the main administrative page that allows you to access the other pages.
    - Settings Page: This page will allow the user to change specific things about their game environment.
      This includes things like currency, types of game rules, etc. This will be expanded as the games are developed.
@@ -77,7 +77,7 @@ She presses login, and is taken into the land of gambling goodness.
 - A fun gambling\casino based graphic to have behind the login interface
 
 #####Technical Note
-All user sensetive information moving from the application to the database will need to be encrypted
+All user sensetive information moving from the application to the database will need to be encrypted.
 
 ####DONE
 - Nothing
@@ -105,6 +105,10 @@ a properly formatted email, she manages to get all the information in. She press
 - A "Back" button used to return you to the login page
     - This button's location should be consistant with the "Quit" button on the login page
 - Add the same background used for the login page to this page
+
+###Forgot Username or Password Page
+####TODO
+Add specs
 
 ###Main Page
 ####TODO
