@@ -19,7 +19,7 @@ It's all a bit formal, but hopefully it should be fun and give you some great ex
 really works.
 
 ###What You Should Do Next
-Head over to the specifications.md and read through it, see what is still listed on the TODO list, and what has been completed.
+Head over to the func-spec.md and tech-spec.md and read through it, see what is still listed on the TODO list, and what has been completed.
 Find something you think you can implement, pull up (Or create) the appropriate file, and get to it! If you have questions,
 join us on #Lpmc on irc.freenode.net.
 
