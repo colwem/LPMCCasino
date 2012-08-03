@@ -32,3 +32,4 @@ line as the boolean statement, while the closing brace occupies its own line.
 - Follow general OOP practices. Inheritance and polymoprhism are going to be especially important when dealing with Swing.
 - Use lazy initialization where prudent
 - Only expose variables via getter and setter methods
+- Do not try to access the database directly, instead go through the database access layer.
