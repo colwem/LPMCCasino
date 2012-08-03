@@ -97,10 +97,19 @@ Logout - Ends a users session.
     Compnents: user
     Returns: bool
     Syntax: ||logout::sessid:<sessionid>||
-    
+
+Create New Account - Creates a new user account.
+
+    Name: createacc
+    Components: user, pass, email, currency
+    Returns: sessid
+    Syntax: ||createacc::user:<username>|pass:<password>|email:<email>|currency:<currency>||
+
 Recover Account Information - Sends a user their username and reset their password
 
     Name: recover
     Components: email
     Returns: bool
     Syntax: ||recover::email:<email>||
+    
+###Game Blocks - These will be added as development continues
