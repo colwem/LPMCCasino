@@ -16,7 +16,7 @@ There are five layers to this application:
     - The client communication layer is either:
         - Java code running within the applet
         - The communication logic of the IRC bot
-    Both communication layers follow the syntax defined within the API specification of this document.
+    Both communication layers follow the syntax defined within the API specification (api-spec.md).
 
 ####Server side
 - Server Communication Layer
@@ -46,3 +46,31 @@ And they interact linearly as such:
                     |
              Database Layer
 
+##Descriptions of Layers
+These descriptions will be fleshed out over the next few days.
+
+###Server Side
+###Server Communication Layer
+This is a wrapper around the API communication protocol. This layer parses out the incoming messages and appropriates
+them to the correct game or administrative class within the logic layer. This will be the primary execution layer for
+the server side code. As it accepts and parses incoming messages, a different thread of the correct logic layer will be 
+created to play that game.
+
+###Logic Layer
+This is by far the most complicated layer, as it controls all game logic for all 5 games.
+
+###Database Layer
+The database layer is a wrapper for a SQL database that stores the relevant user information. This is the only way
+to interact with the database, and will be accessed almost exclusively by the logic layer. It consists of a single
+database access class, implemented as a singleton.
+
+###Client Side
+###Client Communication Layer
+This is another wrapper around the API communication protocol. The GUI will create and use one of these as needed 
+in order to send and recieve information from the server. 
+
+###Presentation Layer
+This layer is the primary interface with the user. There are two presentation layers currently being developed. The
+first layer is a Swing GUI in Java, that follows the layout of the functional specifications detailed in the
+func-spec.md document. The second layer is a plugin for an IRC bot, that uses a consistent set of commands in order
+to provide the same functionality in a text-based format. 
