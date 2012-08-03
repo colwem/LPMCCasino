@@ -54,20 +54,26 @@ User Information -
 
 ####Setters
 Change - Modifies a user's account information
+
     Name: change
     Components: user, target, old, new
     Syntax: ||change::target:<target>|old:<oldvalue>|new:<newvalue>||
 
 ####Functions
 Login - Validates a user logging in.
+
     Name: login
     Components: user, pass
     Syntax: ||login::user:<username>|pass:<password>||
+    
 Logout - Ends a users session.
+
     Name: logout
     Compnents: user
     Syntax: ||logout::user:<username>||
+    
 Recover Account Information - Sends a user their username and reset their password
+
     Name: recover
     Components: email
-    Syntax: ||recover:\:email\:<email>||
+    Syntax: ||recover::email:<email>||
