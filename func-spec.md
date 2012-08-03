@@ -104,6 +104,7 @@ a properly formatted email, she manages to get all the information in. She press
 - A "Create Account" button, used to finish the user input
 - A "Back" button used to return you to the login page
     - This button's location should be consistant with the "Quit" button on the login page
+- A title\header that reads "Learn Programming Casino" in some sans serif font
 - Add the same background used for the login page to this page
 
 ####DONE
@@ -127,91 +128,131 @@ Looks like she'll be back to this page relatively shortly!
 
 
 ####TODO
-- A text box that allows the user to input their email
+- A text box that allows the user to input their email labelled "Please Enter your Email"
 - A verification output to let the user know they have successfully or unsuccessfully sent themselves their
 username and new password.
 - A back button to return you to the main login page
+- A title\header that reads "Learn Programming Casino" in some sans serif font
 - Add the same background used for the login page to this page.
 
 ####DONE
--Nothing
-
-###Main Page
-
-####Usage Case
-
-####TODO
-Add specs
-
-####DONE
--Nothing
+- Nothing
 
 ###Settings Page
+The settings page is used for the player to change their individual settings for their account. These include
+their email, their password, and their currency. As more complicated features are added, this page will need
+to be updated to contain configuration options for the additional fields.
 
 ####Usage Case
+Felicity is a fickle soul, in case you couldn't tell by her name. She likes going around and changing the settings
+on her stuff, just because she can. Because of this, after getting to the main page she immediately heads to settings
+to tweak her casino experience. Unfortunately for her, there isn't a setting that makes the games easier, so the best
+she can settle for is switching her currency to Euros, because the French use those and the French are refined. Like Felicity.
+
 
 ####TODO
-Add specs
+- A text box labelled "Change Password" that allows you to modify your password
+- A text box labelled "Change Email" that allows you to modify your email
+- A dropdown allowing you to specify which currency you want your money in in the casino
+- A text box labelled "Enter Your Current Password", in order to validate the changes
+- The same background image used on the main page
+- A title\header that reads "Learn Programming Casino" in some sans serif font
+- A back button in the same location as the "Quit" button on the login page, 
+that returns you to the Main page.
 
 ####DONE
--Nothing
+- Nothing
 
+###Main Page
+This is the main splash page for the Casino. It displays your current amount of money, your available games, 
+and gives you the option to access your settings page. This is a centralized hub for what's going on in the Casino,
+but does not have any extensive functionality into and of itself.
+
+####Usage Case
+Felicity has finally gotten to the main page of the Casino. She stares, bewildered at all the different options. 
+Down the left side she can see all of the games she can play, from Slots to Poker, and gets very excited. On the right,
+she sees the settings button she just used, as well as some silly "Quit" button. Who would ever quit gambling? Finally,
+she notices that she's got $500 courtesy of the Casino, and squeals with glee. She clicks on blackjack, while her friends
+and family let out a sigh of relief: She didn't notice it isn't real money.
+
+####TODO
+- A bank display labelled "Current Bankroll" that displays the amount of money the player
+has in their given currency
+- A title for the grouping of buttons to take you to play the games, called "Available Games"
+- A button labelled "Slots" that takes you to the Slots page
+- A button labelled "Blackjack" that takes you to the Blackjack page
+- A button labelled "Roulette" that takes you to the Roulette page
+- A button labelled "Craps" that takes you to the Craps page
+- A button labelled "Texas Hold 'em" that takes you to the Texas Hold 'em page
+- A button labelled "Gentleman's Poker" that takes you to the Gentleman's Poker page
+Note: All of these buttons should have the same look, feel, and size, as well as
+be layed out in some form of grid.
+- A "Settings" button that allows the user to go to the Settings Page
+- A "Quit" button that allows the user to exit the game.
+            - This button will need to validate that the user really wants to quit
+- A title\header that reads "Learn Programming Casino" in some sans serif font
+- A background image of some kind of casino or gambling image to set the proper mood of the page.
+
+####DONE
+- Nothing
+
+##The game pages will be updated as work on the project progresses
 ###Slots Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
 
 ###Blackjack Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
 
 ###Roulette Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
 
 ###Craps Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
 
 ###Texas Hold 'em Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
 
 ###Gentleman's Poker Page
 
 ####Usage Case
 
 ####TODO
-Add specs
+- Add specs
 
 ####DONE
--Nothing
+- Nothing
