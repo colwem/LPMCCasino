@@ -1,7 +1,7 @@
 LPMCCasino
 ==========
-##Newcomers start here
-Hello, glad to see you're interested in the LPMCCasino. This is a Java project that will utilize the Swing library to
+##Newcomers Start Here
+Hello, glad to see you're interested in the LPMCCasino. This is a Java project utilizing the Swing library to
 make a Casino applet, to be placed inline in a web browser. 
 
 This project probably works a bit differently than maybe your school assignments or other projects within the LPMC.
@@ -18,13 +18,17 @@ pull request will be declined, with an explanation so you can go back and fix it
 It's all a bit formal, but hopefully it should be fun and give you some great experience into how developing software 
 really works.
 
+###What You Should Do Next
+Head over to the func-spec.md and tech-spec.md specifications and read through it, see what is still listed on the TODO list, and what has been completed.
+Find something you think you can implement, pull up (Or create) the appropriate file, and get to it! If you have questions,
+join us on #Lpmc on irc.freenode.net.
+
 ##Basic Description
 A Java applet to play games at a casino
 
 As a rough sketch, here's generally what this project will consist of. 
 It will be a GUI based Java program that allows you to play various gambling games. It will consist of the following pages:
 
-- Splash Page
 - Login Page
 - Home Page
 - Game Pages for the following games:
@@ -35,5 +39,4 @@ It will be a GUI based Java program that allows you to play various gambling gam
     - Texas Hold 'em
     
 Now of course this won't be with real money, and will be entirely for fun. 
-Principles of the project are in the specifications.md document, and a best practices document is soon to come, but for now
-the general idea is good, clean, well object oriented code with an emphasis on doing it right, not just getting it done.
+Principles of the project are in the bestpractices.md document, and the more detailed descriptions are in the spec documents listed above.
