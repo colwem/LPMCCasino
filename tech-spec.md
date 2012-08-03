@@ -47,7 +47,8 @@ And they interact linearly as such:
              Database Layer
 
 ##Descriptions of Layers
-These descriptions will be fleshed out over the next few days.
+Each layer will have it's own defined interface, and must be decoupled from every other layer. This requirement
+trumps all others. These descriptions will be fleshed out over the next few days.
 
 ###Server Side
 ###Server Communication Layer
