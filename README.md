@@ -1,7 +1,7 @@
 LPMCCasino
 ==========
 ##Newcomers Start Here
-Hello, glad to see you're interested in the LPMCCasino. This is a Java project that will utilize the Swing library to
+Hello, glad to see you're interested in the LPMCCasino. This is a Java project utilizing the Swing library to
 make a Casino applet, to be placed inline in a web browser. 
 
 This project probably works a bit differently than maybe your school assignments or other projects within the LPMC.
