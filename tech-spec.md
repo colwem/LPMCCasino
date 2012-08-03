@@ -45,4 +45,21 @@ And they interact linearly as such:
                     |
                     |
              Database Layer
-         
+
+##API Specification
+###Basic Descrption
+This API is a language agnostic syntax used to communicate between the client and server layers, allowing independence
+of implementation between client and server. 
+
+###General Guidelines
+- This is a raw socket connection, which uses a stream of string information to communicate between client and server.
+- Overall syntax considerations:
+    - A distinct information block (eg: A login request or a bet from one of the games) will be bound by two pipes (||).
+    - Immediately following the pipes will be the name of the block of information
+    - The data of a information block will be delimited from the name by two colons (::)
+    - Varying pieces of data within that command block will delimited by a pipe (|)
+    - Each piece of data will be set off by a standardized identifier, and identified by a standardized naming 
+    scheme followed by a colon (:) 
+    - All of these identifying marks, should they need to be included in a datastream, will be escaped using a 
+    blackslash (\)
+    - Example: ||login::user:locke|pass:ilovelpmc||
