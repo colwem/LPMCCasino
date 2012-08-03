@@ -66,4 +66,5 @@ of implementation between client and server.
     blackslash (\\).
 
 Example:
+
     ||userinfo::user:locke|pass:ilovelpmc|currency:dollar|email:locke@uga.edu|money:500||
