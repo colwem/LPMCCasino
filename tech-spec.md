@@ -61,5 +61,5 @@ of implementation between client and server.
     - Each piece of data will be set off by a standardized identifier, and identified by a standardized naming 
     scheme followed by a colon (:) 
     - All of these identifying marks, should they need to be included in a datastream, will be escaped using a 
-    blackslash (\)
+    blackslash (\\)
     - Example: ||login::user:locke|pass:ilovelpmc||
