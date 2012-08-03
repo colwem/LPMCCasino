@@ -1,5 +1,5 @@
 #API Specification - LPMC Casino
-##Basic Descrption
+##Overview
 This API is a language agnostic syntax used to communicate between the client and server layers, allowing independence
 of implementation between client and server. 
 
@@ -54,12 +54,16 @@ Email - Returns a user's email
     Returns: email
     Syntax: ||email::sessid:<sessionid>|user:<username>||
 
+Status: NOT STARTED
+
 Currency - Returns a user's currency
 
     Name: currency
     Components: sessid, user
     Returns: currency
     Syntax: ||currency::sessid:<sessionid>|user:<username>||
+
+Status: NOT STARTED
 
 Money - Returns the amount of money the user has
 
@@ -68,12 +72,16 @@ Money - Returns the amount of money the user has
     Returns: money
     Syntax: ||money::sessid:<sessionid>|user:<username>||
 
+Status: NOT STARTED
+
 User Information - Returns a block of user information
 
     Name: userinfo
     Components: sessid, user
     Returns: email, currency, money
     Syntax: ||userinfo::sessid:<sessionid>|user:<username>||
+
+Status: NOT STARTED
 
 ####Setters
 Change - Modifies a user's account information.
@@ -83,6 +91,8 @@ Change - Modifies a user's account information.
     Returns: bool
     Syntax: ||change::sessid:<sessionid>|target:<target>|old:<oldvalue>|new:<newvalue>||
 
+Status: NOT STARTED
+
 ####Functions
 Login - Validates a user logging in.
 
@@ -90,13 +100,17 @@ Login - Validates a user logging in.
     Components: user, pass
     Returns: sessid
     Syntax: ||login::user:<username>|pass:<password>||
-    
+
+Status: NOT STARTED
+
 Logout - Ends a users session.
 
     Name: logout
     Compnents: user
     Returns: bool
     Syntax: ||logout::sessid:<sessionid>||
+
+Status: NOT STARTED
 
 Create New Account - Creates a new user account.
 
@@ -105,11 +119,15 @@ Create New Account - Creates a new user account.
     Returns: sessid
     Syntax: ||createacc::user:<username>|pass:<password>|email:<email>|currency:<currency>||
 
+Status: NOT STARTED
+
 Recover Account Information - Sends a user their username and reset their password
 
     Name: recover
     Components: email
     Returns: bool
     Syntax: ||recover::email:<email>||
-    
+
+Status: NOT STARTED
+
 ###Game Blocks - These will be added as development continues
