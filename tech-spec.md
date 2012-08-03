@@ -64,6 +64,7 @@ of implementation between client and server.
     information block
     - All of these identifying marks, should they need to be included in a datastream, will be escaped using a 
     blackslash (\\).
+
 Example:
 
     ||userinfo::user:locke|pass:ilovelpmc|currency:dollar|email:locke@uga.edu|money:500||
