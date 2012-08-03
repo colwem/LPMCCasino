@@ -70,4 +70,4 @@ Logout - Ends a users session.
 Recover Account Information - Sends a user their username and reset their password
     Name: recover
     Components: email
-    Syntax: ||recover::email:<email>||
+    Syntax: ||recover::email:\<email\>||
