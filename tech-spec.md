@@ -59,7 +59,11 @@ of implementation between client and server.
     - The data of a information block will be delimited from the name by two colons (::)
     - Varying pieces of data within that command block will delimited by a pipe (|)
     - Each piece of data will be set off by a standardized identifier, and identified by a standardized naming 
-    scheme followed by a colon (:) 
+    scheme followed by a colon (:)
+    - The data will continue in this fashion until the next double pipe (||) is met, marking the end of that
+    information block
     - All of these identifying marks, should they need to be included in a datastream, will be escaped using a 
-    blackslash (\\)
-    - Example: ||login::user:locke|pass:ilovelpmc||
+    blackslash (\\).
+    - Example:
+
+    ||userinfo::user:locke|pass:ilovelpmc|currency:dollar|email:locke@uga.edu|money:500||
