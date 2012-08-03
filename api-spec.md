@@ -23,13 +23,17 @@ Example:
     ||userinfo::user:locke|email:locke@uga.edu|currency:dollar|money:500||
 
 ##Full Specification
+This API is primarily a way for clients to issue commands and receive information from the server. The syntax
+of return statements and requests are the same, with different components being sent and received. To be able to 
+use the API, the client must first login with a username and a password. From there, the server will issue a sessid, 
+which must be included in every call.
+
 ###General Syntax Template
     ||<NameOfInfo>::<Component1>:<Info>|<Component2>:<Info>|...|<ComponentN>:<Info>||
 
-
-    
 ###Administrative Blocks
 ####Component Descriptions
+    - sessid: A client's session id
     - user: A user's full username
     - pass: A user's full password
     - email: A user's full email
@@ -40,40 +44,63 @@ Example:
     - old: When modifying a component, this is the old version
     - target: When a command can be specified to multiple locations, this specifies the name of the location. 
     This target will *always* be another component name, however that component must not be read only.
-    
+    - bool: A boolean value
 
 ####Getters
-Email - 
+Email - Returns a user's email
 
-Currency -
+    Name: email
+    Components: sessid, user
+    Returns: email
+    Syntax: ||email::sessid:<sessionid>|user:<username>||
 
-Money - 
+Currency - Returns a user's currency
 
-User Information - 
+    Name: currency
+    Components: sessid, user
+    Returns: currency
+    Syntax: ||currency::sessid:<sessionid>|user:<username>||
 
+Money - Returns the amount of money the user has
+
+    Name: money
+    Components: sessid, user
+    Returns: money
+    Syntax: ||money::sessid:<sessionid>|user:<username>||
+
+User Information - Returns a block of user information
+
+    Name: userinfo
+    Components: sessid, user
+    Returns: email, currency, money
+    Syntax: ||userinfo::sessid:<sessionid>|user:<username>||
 
 ####Setters
-Change - Modifies a user's account information
+Change - Modifies a user's account information.
 
     Name: change
     Components: user, target, old, new
-    Syntax: ||change::target:<target>|old:<oldvalue>|new:<newvalue>||
+    Returns: bool
+    Syntax: ||change::sessid:<sessionid>|target:<target>|old:<oldvalue>|new:<newvalue>||
 
 ####Functions
 Login - Validates a user logging in.
 
     Name: login
     Components: user, pass
+    Returns: sessid
     Syntax: ||login::user:<username>|pass:<password>||
     
 Logout - Ends a users session.
 
     Name: logout
     Compnents: user
-    Syntax: ||logout::user:<username>||
+    Returns: bool
+    Syntax: ||logout::sessid:<sessionid>||
     
 Recover Account Information - Sends a user their username and reset their password
 
     Name: recover
     Components: email
+    Returns: bool
     Syntax: ||recover::email:<email>||
