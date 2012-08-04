@@ -57,8 +57,49 @@ them to the correct game or administrative class within the logic layer. This wi
 the server side code. As it accepts and parses incoming messages, a different thread of the correct logic layer will be 
 created to play that game.
 
+    Interaction Diagram and Method Listing
+    
+        Abstract Client Communication Layer
+                        |
+                        |
+                   The Internet
+                        |
+                        |
+            Server Communication Layer
+                GameListener.java
+                    <Method listing stub>
+                ServerParser.java
+                    <Method listing stub>
+                        |
+                        |
+               Abstract Logic Layer
+            
 ###Logic Layer
-This is by far the most complicated layer, as it controls all game logic for all 5 games.
+This is by far the most complicated layer, as it controls all game logic for all 5 games
+as well as administrative commands, and as such will be the last one for me to update.
+
+    Interaction Diagram and Method Listing
+    
+        Abstract Server Communication Layer
+                        |
+                        |
+                    Logic Layer
+                        IAdmin.java
+                            <Method listing stub>
+                        IBlackJack.java
+                            <Method listing stub>
+                        ICraps.java
+                            <Method listing stub>
+                        IRoulette.java
+                            <Method listing stub>
+                        ITexas.java
+                            <Method listing stub>
+                        IPoker.java
+                            <Method listing stub>
+                        |
+                        |
+        Abstract Database Access Layer
+
 
 ###Database Layer
 The database layer is a wrapper for a SQL database that stores the relevant user information. This is the only way
@@ -70,18 +111,19 @@ database access class, implemented as a singleton.
         Abstract Logic Layer
                 |
                 |
-        IDatabaseAccess.java
-            + openServer() : DatabseObject 
-            + openServer(String server) : DatbaseObject
-            + getUserInfo(String user) : String[]
-            + getEmail(String user) : String
-            + getPassword(String user) : String
-            + getMoney(String user): String
-            + getCurrency(String user) : String
-            + setEmail(String user, String email) : boolean
-            + setPassword(String user, String password) : boolean
-            + setMoney(String user, int money) : boolean
-            + setCurrency(String user, int currency) : boolean
+         Database Layer
+            IDatabaseAccess.java
+                + openServer() : DatabseObject 
+                + closeServer() : boolean
+                + getUserInfo(String user) : String[]
+                + getEmail(String user) : String
+                + getPassword(String user) : String
+                + getMoney(String user): String
+                + getCurrency(String user) : String
+                + setEmail(String user, String email) : boolean
+                + setPassword(String user, String password) : boolean
+                + setMoney(String user, int money) : boolean
+                + setCurrency(String user, int currency) : boolean
                 |
                 |
         MYSQL Datbase
@@ -97,11 +139,36 @@ database access class, implemented as a singleton.
 
 ###Client Side
 ###Client Communication Layer
-This is another wrapper around the API communication protocol. The GUI will create and use one of these as needed 
-in order to send and recieve information from the server. 
+This is another wrapper around the API communication protocol. The presentation
+layer will create and use one of these as needed in order to send and recieve information from the server. 
+This method listing is loosely defined, as a method listing cannot be language entirely language agnostic. 
+The modifications needed for this to be implemented in the language of the client are left to the discretion of
+the programmer.
+
+    Interaction Diagram and Method Listing
+        Abstract Client Presentation Layer
+                        |
+                        |
+            Client Communication Layer
+                IClientMessenger
+                    <method listing stub>
+                        |
+                        |
+                   The Internet
+                        |
+                        |
+            Abstract Server Communication Layer
 
 ###Presentation Layer
 This layer is the primary interface with the user. There are two presentation layers currently being developed. The
 first layer is a Swing GUI in Java, that follows the layout of the functional specifications detailed in the
-func-spec.md document. The second layer is a plugin for an IRC bot, that uses a consistent set of commands in order
-to provide the same functionality in a text-based format. 
+func-spec.md document. The second layer is a plugin for an IRC bot, that uses a consistent set of commands (defined in
+irc-spec.md) in order to provide the same functionality in a text-based format. As this layer is detailed much more
+heavily and language agnostically in the func-spec.md and irc-spec.md documents, only an interaction diagram will be
+provided. See func-spec.md and irc-spec.md for more details.
+
+    Interaction Diagram
+            Client Presentation Layer
+                       |
+                       |
+        Abstract Client Communication Layer
