@@ -65,6 +65,36 @@ The database layer is a wrapper for a SQL database that stores the relevant user
 to interact with the database, and will be accessed almost exclusively by the logic layer. It consists of a single
 database access class, implemented as a singleton.
 
+    Interaction Diagram and Method Listing
+        
+        Abstract Logic Layer
+                |
+                |
+        IDatabaseAccess.java
+            + openServer() : DatabseObject 
+            + openServer(String server) : DatbaseObject
+            + getUserInfo(String user) : String[]
+            + getEmail(String user) : String
+            + getPassword(String user) : String
+            + getMoney(String user): String
+            + getCurrency(String user) : String
+            + setEmail(String user, String email) : boolean
+            + setPassword(String user, String password) : boolean
+            + setMoney(String user, int money) : boolean
+            + setCurrency(String user, int currency) : boolean
+                |
+                |
+        MYSQL Datbase
+            Table - user
+                Fields:
+                pkey
+                username
+                password
+                email
+                money
+                currency
+                    
+
 ###Client Side
 ###Client Communication Layer
 This is another wrapper around the API communication protocol. The GUI will create and use one of these as needed 
