@@ -145,13 +145,39 @@ This method listing is loosely defined, as a method listing cannot be language e
 The modifications needed for this to be implemented in the language of the client are left to the discretion of
 the programmer.
 
+For more information on the server calls needed to implement these functions, see irc-spec.md.
+
     Interaction Diagram and Method Listing
         Abstract Client Presentation Layer
                         |
                         |
             Client Communication Layer
                 IClientMessenger
-                    <method listing stub>
+                    + connect()
+                        Connects to the server to begin communication. Initiated on client start up
+                    + login(username, password) 
+                        Accepts in a username and password, and sends the proper login request to the server. 
+                        Then, accepts and returns the server's issued sessid.
+                    + createAccount(username, password, email, currency)
+                        Accepts in a username, pass, email and currency, and sends the proper creation message 
+                        to the server, which returns a sessid.
+                    + change(item, newValue)
+                        Accepts in an item and new value, and passes it to the server, which then returns a
+                        boolean value.
+                    + recover(email)
+                        Accepts in an email which then gets passed to the server in order to recover an account.
+                    + disconnect()
+                        Closes the connection and cleans up as needed
+                    + getEmail()
+                        Returns a user's email account from the server
+                    + getCurrency()
+                        Returns a user's currency from the server
+                    + getMoney()
+                        Returns a user's money from the server
+                    + getUserInfo()
+                        Returns all three of the above (email, currency, money) at once. This method should be used
+                        for initializing these values within the UI to reduce server overhead, and then updated as 
+                        needed with the above calls.
                         |
                         |
                    The Internet
