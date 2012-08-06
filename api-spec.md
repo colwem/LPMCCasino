@@ -87,7 +87,7 @@ Status: NOT STARTED
 Change - Modifies a user's account information.
 
     Name: change
-    Components: user, target, old, new
+    Components: sessid, target, old, new
     Returns: bool
     Syntax: ||change::sessid:<sessionid>|target:<target>|old:<oldvalue>|new:<newvalue>||
 
