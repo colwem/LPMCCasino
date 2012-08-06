@@ -13,7 +13,7 @@ that each nickname is bound to a sessid after logging in.
 These commands must be issued privately, either via a notice or private message
 
     !login <username> <password>
-    !createacc <username> <password> <password> <email> <email>
+    !createacc <username> <username> <password> <password> <email> <currency>
     !change <item> <new value>
     !recover <email>
     
