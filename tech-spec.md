@@ -67,9 +67,15 @@ created to play that game.
                         |
             Server Communication Layer
                 GameListener.java
-                    <Method listing stub>
+                    main() : void
+                    openServer() : void
+                    getNext() : void
                 ServerParser.java
-                    <Method listing stub>
+                    parseMessage(String message) : Message
+                    parseMessage(Message message) : String
+                ServerSender.java
+                    sendMessage(String message) : void
+                Message.java    
                         |
                         |
                Abstract Logic Layer
@@ -85,7 +91,16 @@ as well as administrative commands, and as such will be the last one for me to u
                         |
                     Logic Layer
                         IAdmin.java
-                            <Method listing stub>
+                            + login(String username, String password) : String sessid
+                            + createAccount(String username, String password, String email, int currency) : boolean
+                            + change(String sessid, String target, String newValue) : boolean
+                            + recover(String email) : boolean
+                            + logout(String sessid) : boolean
+                            + getEmail(String sessid) : String email
+                            + getCurrency(String sessid) : int currency
+                            + getMoney(String sessid) : int money
+                            + getUserInfo(String sessid) : String[] userInfo
+                            + getUser(String sessid) : String user
                         IBlackJack.java
                             <Method listing stub>
                         ICraps.java
@@ -115,11 +130,11 @@ database access class, implemented as a singleton.
             IDatabaseAccess.java
                 + openServer() : DatabseObject 
                 + closeServer() : boolean
-                + getUserInfo(String user) : String[]
-                + getEmail(String user) : String
-                + getPassword(String user) : String
-                + getMoney(String user): String
-                + getCurrency(String user) : String
+                + getUserInfo(String user) : String[] userInfo
+                + getEmail(String user) : String email
+                + getPassword(String user) : String password
+                + getMoney(String user): long money
+                + getCurrency(String user) : int currency
                 + setEmail(String user, String email) : boolean
                 + setPassword(String user, String password) : boolean
                 + setMoney(String user, int money) : boolean
